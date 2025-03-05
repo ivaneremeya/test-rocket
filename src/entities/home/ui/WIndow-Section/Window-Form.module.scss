@@ -1,0 +1,91 @@
+.window__inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.window__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  h3 {
+    margin: 0;
+  }
+}
+.window__form {
+  padding: 16px 18px 18px 18px;
+  border-radius: 8px;
+  border: 1px dashed #526eff;
+  width: 266px;
+  height: 180px;
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+.window__section {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    row-gap: 24px;
+  }
+}
+
+.input_width {
+  width: 107px;
+}
+.window__button {
+  width: 266px;
+  height: 180px;
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+  svg {
+    g {
+      opacity: 0.2;
+      transition: opacity 0.4s ease;
+    }
+    g:hover {
+      opacity: 1;
+    }
+  }
+}
+.window__button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(82, 110, 255, 0.7);
+}
+.window__input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  align-items: baseline;
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+
+  label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  input {
+    border: 1px solid #111;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    opacity: 0.4;
+    &:focus {
+      opacity: 1;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+}

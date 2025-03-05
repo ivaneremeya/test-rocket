@@ -1,0 +1,44 @@
+.wrapper {
+  position: relative;
+  background-color: #ffff;
+  border-radius: 18px;
+  padding: 58px 80px 64px 80px;
+  @media (max-width: 768px) {
+    padding: 22px 28px 56px 28px;
+    gap: 10px;
+  }
+}
+.windows_container {
+  padding-bottom: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px dashed #8a96d2;
+  gap: 42px;
+  @media (max-width: 768px) {
+  }
+}
+.btn_wrapper {
+  padding-top: 48px;
+
+  button {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    padding-top: 56px;
+  }
+}
+
+.btn__position {
+  position: absolute;
+  top: 26px;
+  right: 26px;
+}

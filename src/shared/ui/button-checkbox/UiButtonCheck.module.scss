@@ -1,0 +1,25 @@
+.uiButtonCheck {
+  border-radius: 0.375rem;
+  background-color: #f3f4f6;
+  color: #4b5563;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.uiButtonChecked {
+  background-color: #526eff;
+  border-radius: 0.375rem;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.radioButton {
+  display: none;
+}

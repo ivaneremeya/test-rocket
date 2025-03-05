@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["./src/app/*"],
+      "@entities/*": ["./src/entities/*"],
+      "@page/*": ["./src/page/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@/*": ["./src/*"]
+    },
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "target": "es5",       // Или "es6", "es2015", "esnext" в зависимости от вашей цели
+    "module": "esnext",    // Или "commonjs", "amd", "umd"
+    "lib": ["es2016", "dom"], // Или "esnext", если хотите самые последние возможности
+    "strict": true,      
+    "moduleResolution": "node", // Важно для разрешения модулей Node.js
+    "skipLibCheck": true,   // Можно включить, чтобы ускорить сборку (но может скрыть ошибки в зависимостях)
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

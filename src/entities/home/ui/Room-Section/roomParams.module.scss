@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 42px;
+  @media (max-width: 768px) {
+    row-gap: 16px;
+  }
+}
+.input_width {
+  width: 266px;
+  @media (max-width: 768px) {
+  }
+}
